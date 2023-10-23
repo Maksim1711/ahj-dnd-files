@@ -1,0 +1,142 @@
+body {
+	background-color: cadetblue;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boards {
+	display: flex;
+	width: 900px;
+	margin: 0 auto;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.boards__column {
+	box-sizing: border-box;
+	width: 290px;
+	background-color: rgb(195, 207, 214);
+	border-radius: 5px;
+	padding: 10px 5px;
+}
+
+.boards__title {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+.boards__list {
+	padding-left: 0px;
+	min-height: 10px;
+}
+
+.boards__item {
+	padding: 8px 8px;
+	margin: 10px 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	list-style: none;
+	box-shadow: 0 5px 7px 0px rgba(0, 0, 0, 0.25);
+	cursor: grab;
+}
+
+.boards__close {
+	position: absolute;
+	z-index: 9999;
+	display: block;
+	border-radius: 3px;
+	width: 20px;
+	height: 20px;
+	background-color: rgb(201, 222, 222);
+	color: rgb(85, 113, 131);
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.boards__close::after {
+	content: '✕';
+}
+
+.boards__add {
+	color: rgb(85, 113, 131);
+	margin: 0px 5px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.boards__add:hover {
+	color: #000000;
+}
+
+.boards__add_form {
+	margin: 0px 5px;
+	position: relative;
+}
+
+.boards__add_textarea {
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 100px;
+	min-height: 50px;
+	border: none;
+	border-radius: 5px;
+}
+
+.boards__add_textarea:focus {
+	outline: none;
+}
+
+.boards__add_controls {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.boards__add_button {
+	font-size: 14px;
+	padding: 7px 10px;
+	border: none;
+	border-radius: 3px;
+	background-color: rgb(33, 163, 33);
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.boards__add_close {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.boards__add_error {
+	width: 100%;
+	background-color: rgb(0, 5, 70);
+	color: #ffffff;
+	font-size: 12px;
+	padding: 1px 5px;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 9999;
+}
+
+.boards__dragged {
+	position: absolute;
+	z-index: 999;
+	box-sizing: border-box;
+	opacity: 0.5;
+	cursor: grabbing;
+	pointer-events: none;
+}
+
+.boards__targetplace {
+	width: 100px;
+	height: 100px;
+	margin: 10px 5px;
+	border-radius: 5px;
+	background-color: rgb(149, 134, 175);
+	box-shadow: 0 5px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=main.css.map*/
